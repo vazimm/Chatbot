@@ -1,6 +1,6 @@
 // Função para iniciar o chat
 function iniciarChat() {
-    let entradaUsuario = prompt("Olá! Como posso te ajudar hoje?");
+    let entradaUsuario = prompt("Olá! Como posso te ajudar hoje?").toLowerCase();
     let resposta = chatbotResposta(entradaUsuario);
     document.getElementById("chatContent").innerHTML += `<p><strong>Você:</strong> ${entradaUsuario}</p>`;
     document.getElementById("chatContent").innerHTML += `<p><strong>Chatbot:</strong> ${resposta}</p>`;
